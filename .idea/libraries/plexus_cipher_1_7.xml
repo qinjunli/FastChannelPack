@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-cipher-1.7">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/plexus-cipher-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

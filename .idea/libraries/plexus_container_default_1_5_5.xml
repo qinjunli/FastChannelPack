@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-container-default-1.5.5">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/plexus-container-default-1.5.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wagon-file-2.4">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/wagon-file-2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
