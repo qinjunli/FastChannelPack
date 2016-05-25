@@ -1,8 +1,12 @@
 # FastChannelPack
+============
+
 A fast channel pack plugin for android build
 
 ## Download
-```
+--------
+
+```groovy
 buildscript {
   repositories {
     mavenCentral()
@@ -17,11 +21,12 @@ apply plugin: 'apply plugin: 'junli.toolbox.channelpack''
 ```
 
 ## Generate Channel apk File
+--------
 
-add the extension channel, add new channel Config List by provide channel name list or channel File
+Add the extension channel, add new channel Config List by provide channel name list or channel File
 
 
-```
+```groovy
 channel{
     channelPrefix = "{channelPrefix}"
     channelConfig{
@@ -50,12 +55,13 @@ build/apks/wandoujiaDebug.apk
 
 
 ## read the channel attribute in the apk file
+--------
 
 you can read the META-INF/{channalPrefix}_{channel} file in the apk file and retrieve the
 channel attribute using your own method, here is a general method
 
 
-```
+```java
 public static String getChannelFromApk(Context context) {
     ApplicationInfo appinfo = context.getApplicationInfo();
     String sourceDir = appinfo.sourceDir;
