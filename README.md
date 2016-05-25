@@ -1,5 +1,4 @@
 # FastChannelPack
-============
 
 A fast channel pack plugin for android build
 
@@ -22,7 +21,6 @@ apply plugin: 'apply plugin: 'junli.toolbox.channelpack''
 
 ## Generate Channel apk File
 --------
-
 Add the extension channel, add new channel Config List by provide channel name list or channel File
 
 
@@ -56,7 +54,6 @@ build/apks/wandoujiaDebug.apk
 
 ## read the channel attribute in the apk file
 --------
-
 you can read the META-INF/{channalPrefix}_{channel} file in the apk file and retrieve the
 channel attribute using your own method, here is a general method
 
