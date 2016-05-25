@@ -5,6 +5,7 @@ import org.gradle.api.NamedDomainObjectContainer
 
 class ChannelExt{
 
+    String channelPrefix
     NamedDomainObjectContainer<ChannelConfig> channelConfigs;
 
     public ChannelExt(NamedDomainObjectContainer<ChannelConfig> channelConfigs){

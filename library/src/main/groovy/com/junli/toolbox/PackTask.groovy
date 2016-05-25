@@ -11,6 +11,8 @@ import java.util.zip.ZipOutputStream
 
 class PackTask extends DefaultTask{
 
+    String channelPrefix
+
     ChannelConfig channelConfig
 
     //android buildVariant
@@ -41,7 +43,7 @@ class PackTask extends DefaultTask{
             }
             newApkFile << originalFile.bytes
 
-            addFileToExistingZip(newApkFile, "META-INF/bmbchannel_$channelStr")
+            addFileToExistingZip(newApkFile, "META-INF/${channelPrefix}_${channelStr}")
 
         }
     }

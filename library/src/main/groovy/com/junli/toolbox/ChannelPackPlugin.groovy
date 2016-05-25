@@ -17,19 +17,17 @@ public class ChannelPackPlugin implements Plugin<Project>{
 
         project.android.applicationVariants.all { var ->
 
-            def channelExt = project.extensions.getByName('channel')
-
-            println channelExt
+            ChannelExt channelExt = project.extensions.getByName('channel')
 
             NamedDomainObjectContainer<ChannelConfig> fetchedConfigList =
                     channelExt.getChannelConfigs();
-
 
             fetchedConfigList.forEach { ChannelConfig config ->
                 def taskName = "pack"+ config.getName().capitalize() + var.name.capitalize()
                 Task packTask = project.task(taskName, type: PackTask){
                     channelConfig = config
                     variant = var
+                    channelPrefix = channelExt.channelPrefix
                     group = 'pack'
                 }
 
