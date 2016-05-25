@@ -1,5 +1,75 @@
-apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.bintray'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile gradleApi()
+    compile localGroovy()
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allGroovy
+    classifier = 'sources'
+}
+
+task javadocJar(type: Jar, dependsOn: groovydoc) {
+    from groovydoc.destinationDir
+    classifier = 'javadoc'
+}
+
+
+group='com.junli.toolbox'
+version='0.0.1'
+
+publishing{
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+            groupId project.group
+            artifactId 'channelpack'
+            version project.version
+
+        }
+    }
+
+    repositories{
+        maven {
+            // change to point to your repo, e.g. http://my.org/repo
+            url "../repo"
+        }
+    }
+}
+
+
+
+def projectName = "fastChannelPack"
+def mavenDesc = 'A fast channel pack plugin for android build'
+def baseUrl = 'https://github.com/qinjunli/FastChannelPack'
+def siteUrl = baseUrl
+def gitUrl = "https://github.com/qinjunli/FastChannelPack.git"
+def issueUrl = "https://github.com/qinjunli/FastChannelPack/issues"
+
+def licenseIds = ['Apache-2.0']
+
+bintray {
+    user = BINTRAY_USER
+    key = BINTRAY_KEY
+    configurations = ['archives']
+    pkg {
+        repo = 'maven'
+        name = projectName
+        desc = mavenDesc
+        websiteUrl = siteUrl
+        issueTrackerUrl = issueUrl
+        vcsUrl = gitUrl
+        labels = ['gradle', 'plugin', 'pack']
+        licenses = licenseIds
+        publish = true
+        publicDownloadNumbers = true
+    }
 }
