@@ -27,9 +27,15 @@ class PackTask extends DefaultTask{
         channelConfig.getConfiguredChannelList().forEach{ channelStr ->
             //1. copy a apk file to destination path
 
+            def new_apk_name = "${variant.name}-$channelStr-${variant.versionName}-${variant.versionCode}.apk"
+            def apk_target_path = "build/apks/";
+//            File newApkFile = new File(project.rootDir,
+//                    "build/apks/$channelStr-${originalFile.getName()}")
+
             File newApkFile = new File(project.rootDir,
-                    "build/apks/$channelStr-${originalFile.getName()}")
+                    apk_target_path + new_apk_name)
             if(newApkFile.exists()){
+//                println("delete exsiting file ${newApkFile.getAbsolutePath()}")
                 newApkFile.delete()
             }
 
@@ -38,13 +44,14 @@ class PackTask extends DefaultTask{
                 throw new IllegalStateException("Couldn't create dir: " + parent);
             }
             if(!newApkFile.exists()){
-                println("creating new file ${newApkFile.getAbsolutePath()}")
+                println("Generate channel package: ${newApkFile.getAbsolutePath()}")
                 newApkFile.createNewFile()
             }
             newApkFile << originalFile.bytes
 
             addFileToExistingZip(newApkFile, "META-INF/${channelPrefix}_${channelStr}")
 
+            println("Done!")
         }
     }
 

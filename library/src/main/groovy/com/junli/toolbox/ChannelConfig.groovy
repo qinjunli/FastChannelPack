@@ -18,15 +18,24 @@ public class ChannelConfig{
         ArrayList<String> result = new ArrayList<>();
 
         //add channelList
-        if(channelList != null){
-            result.addAll(channelList)
+
+        channelList.forEach { String str ->
+            if (!str.isEmpty()) {
+                result.add(str);
+            }
         }
+//        if(channelList != null){
+//            result.addAll(channelList)
+//        }
 
         //read channelFile and append to result
         if(channelFile != null){
             channelFile.eachLine {line ->
-                def channelName = line.split('#')[0]
-                result << channelName
+                String channelName = line.split('#')[0]
+
+                if(!channelName.isEmpty()){
+                    result << channelName
+                }
             }
         }
 

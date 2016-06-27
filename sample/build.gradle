@@ -1,4 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'junli.toolbox.channelpack'
+
+channel{
+    channelPrefix = "xxx"
+    channelConfig{
+        normal{
+            channelList= ['qq','wandoujia','baidu','googleplay']
+        }
+    }
+}
 
 android {
     compileSdkVersion 23

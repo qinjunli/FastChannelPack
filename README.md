@@ -11,7 +11,7 @@ buildscript {
     mavenCentral()
    }
   dependencies {
-    classpath 'com.junli.toolbox:channelpack:0.0.1'
+    classpath 'com.junli.toolbox:channelpack:0.0.2'
   }
 }
 
