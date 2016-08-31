@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="maven-core-3.0.4">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/maven-core-3.0.4.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

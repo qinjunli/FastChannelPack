@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jsp-api-2.1-6.1.14">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/jsp-api-2.1-6.1.14.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

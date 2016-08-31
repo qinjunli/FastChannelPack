@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jatl-0.2.2">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/jatl-0.2.2.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

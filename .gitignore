@@ -2,6 +2,8 @@
 *.apk
 *.ap_
 
+.DS_Store
+
 # Files for the Dalvik VM
 *.dex
 
@@ -11,6 +13,8 @@
 # Generated files
 bin/
 gen/
+.idea/
+repo/
 
 # Gradle files
 .gradle/

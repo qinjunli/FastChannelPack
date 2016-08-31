@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="simple-4.1.21">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/simple-4.1.21.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

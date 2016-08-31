@@ -19,9 +19,11 @@ public class ChannelConfig{
 
         //add channelList
 
-        channelList.forEach { String str ->
-            if (!str.isEmpty()) {
-                result.add(str);
+        if (channelList != null) {
+            channelList.forEach { String str ->
+                if (!str.isEmpty()) {
+                    result.add(str);
+                }
             }
         }
 //        if(channelList != null){

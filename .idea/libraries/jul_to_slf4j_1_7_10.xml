@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jul-to-slf4j-1.7.10">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/jul-to-slf4j-1.7.10.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

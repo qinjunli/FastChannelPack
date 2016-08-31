@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="asm-all-5.0.3">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/asm-all-5.0.3.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

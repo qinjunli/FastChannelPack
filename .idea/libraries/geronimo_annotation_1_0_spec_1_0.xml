@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="geronimo-annotation_1.0_spec-1.0">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/plugins/geronimo-annotation_1.0_spec-1.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

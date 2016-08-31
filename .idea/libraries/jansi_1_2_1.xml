@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jansi-1.2.1">
-    <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-2.10/lib/jansi-1.2.1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
